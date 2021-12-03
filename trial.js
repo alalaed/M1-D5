@@ -8,3 +8,13 @@ const check3and7 = function (n){
 }
 
 console.log(check3and7(46))
+
+const reversString = function(s){
+
+    let split = s.split("")
+    let reversedArray = split.reverse()
+    let result = reversedArray.join("")
+    console.log(result)
+}
+
+reversString("ali is tired")

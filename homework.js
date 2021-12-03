@@ -87,11 +87,21 @@ const check3and7 = function (n){
 }
 
 console.log(check3and7(45))
+
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR ANSWER HERE */
+const reversString = function(s){
+
+    let split = s.split("")
+    let reversedArray = split.reverse()
+    let result = reversedArray.join("")
+    console.log(result)
+}
+
+reversString("ali is tired")
+
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
