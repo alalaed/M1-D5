@@ -18,3 +18,17 @@ const reversString = function(s){
 }
 
 reversString("ali is tired")
+
+
+const upperFirst = function(s){
+
+    let split = s.split(" ")
+    for( i=0; i<split.length; i++ ){
+        split[i]=split[i].charAt(0).toUpperCase( )+ split[i].slice(1)   
+    }
+    let capital=split.join(" ")
+
+    console.log(capital)
+}
+
+upperFirst("ali is tired")

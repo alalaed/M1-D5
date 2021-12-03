@@ -107,7 +107,18 @@ reversString("ali is tired")
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const upperFirst = function(s){
+
+    let split = s.split(" ")
+    for( i=0; i<split.length; i++ ){
+        split[i]=split[i].charAt(0).toUpperCase( )+ split[i].slice(1)   
+    }
+    let capital=split.join(" ")
+
+    console.log(capital)
+}
+
+upperFirst("ali is tired")
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
