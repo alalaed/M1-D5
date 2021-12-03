@@ -18,3 +18,15 @@ const crazyDiff = function(n){
 }
 
 crazyDiff (34)
+
+const giveMeRandom = function(n){
+    for (i=0; i<=n; i++){
+        let x = Math.random()
+        let y = x*10
+        let z = Math.floor(y)
+
+    console.log(z)
+    }
+}
+
+giveMeRandom(20)
