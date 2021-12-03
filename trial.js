@@ -1,10 +1,13 @@
 
-const boundary = function(n){
-    if( (20 <= n ) && ( n<= 100) || ( n===400) ){
-        return true
+const strivify = function(s){
+    //let s = " "
+    let indexOf = s.indexOf("Strive")
+    let addedString = "Strive"
+    if ( indexOf === 0 ) {
+        console.log(s)
     } else {
-        return "error" 
+        console.log(addedString + " " + s)
     }
 }
 
-console.log(boundary(155))
+strivify("Strive ,ali is tired")

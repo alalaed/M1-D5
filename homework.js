@@ -59,7 +59,19 @@ console.log(boundary(155))
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
-/* WRITE YOUR ANSWER HERE */
+
+const strivify = function(s){
+
+    let indexOf = s.indexOf("Strive")
+    let addedString = "Strive"
+    if ( indexOf === 0 ) {
+        console.log(s)
+    } else {
+        console.log(addedString + " " + s)
+    }
+}
+
+strivify("Strive ,ali is tired")
 
 /* EXERCISE 6
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
