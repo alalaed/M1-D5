@@ -44,7 +44,15 @@ crazySum(2,4)
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const boundary = function(n){
+    if( (20 <= n ) && ( n<= 100) || ( n===400) ){
+        return true
+    } else {
+        return "error" 
+    }
+}
+
+console.log(boundary(155))
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.

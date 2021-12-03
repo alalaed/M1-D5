@@ -1,17 +1,10 @@
-const area = function(l1,l2){
-    result = l1*l2
-    console.log(result)
-}
 
-area(10,20)
-
-const crazySum = function(s1,s2){
-    if(s1!==s2){
-        sum = s1 +s2
-        
-    } else{
-        sum = (s1+s2) * 3
+const boundary = function(n){
+    if( (20 <= n ) && ( n<= 100) || ( n===400) ){
+        return true
+    } else {
+        return "error" 
     }
-    console.log(sum)
 }
-crazySum(2,4)
+
+console.log(boundary(155))
