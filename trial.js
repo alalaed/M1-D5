@@ -7,3 +7,14 @@ for (i=0; i<10; i++){
 
 console.log(z)
 }
+
+const crazyDiff = function(n){
+    if ( n <19){
+        let x = (n-19)*-1
+    }else {
+        x = (n-19)*3
+    }
+    console.log(x)
+}
+
+crazyDiff (34)
