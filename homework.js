@@ -22,7 +22,16 @@ const area = function(l1,l2){
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazySum = function(s1,s2){
+    if(s1!==s2){
+        sum = s1 +s2
+        
+    } else{
+        sum = (s1+s2) * 3
+    }
+    console.log(sum)
+}
+crazySum(2,4)
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
