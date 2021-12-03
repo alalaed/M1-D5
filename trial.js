@@ -32,3 +32,12 @@ const upperFirst = function(s){
 }
 
 upperFirst("ali is tired")
+
+const cutString = function(s){
+    let split = s.split("")
+    let remove = split.pop()
+    let removed = split.splice(0,1)
+    console.log(split)
+}
+
+cutString("ali is Tired")

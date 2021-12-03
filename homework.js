@@ -124,7 +124,14 @@ upperFirst("ali is tired")
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const cutString = function(s){
+    let split = s.split("")
+    let remove = split.pop()
+    let removed = split.splice(0,1)
+    console.log(split)
+}
+
+cutString("ali is Tired")
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
