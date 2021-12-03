@@ -78,8 +78,15 @@ strivify("Strive ,ali is tired")
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
+const check3and7 = function (n){
+    if( n%3===0  || n%7===0){
+        return " Passes"
+    } else {
+        return "denied"
+    }
+}
 
+console.log(check3and7(45))
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */

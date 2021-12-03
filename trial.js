@@ -1,13 +1,10 @@
 
-const strivify = function(s){
-    //let s = " "
-    let indexOf = s.indexOf("Strive")
-    let addedString = "Strive"
-    if ( indexOf === 0 ) {
-        console.log(s)
+const check3and7 = function (n){
+    if( n%3===0  || n%7===0){
+        return " Passes"
     } else {
-        console.log(addedString + " " + s)
+        return "denied"
     }
 }
 
-strivify("Strive ,ali is tired")
+console.log(check3and7(46))
