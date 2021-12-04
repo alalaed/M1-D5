@@ -46,9 +46,9 @@ console.log(shoppingCartTotal())
 
 let item4 = {}
 Object.assign(item4,item1)
-item2.id = " 13 Pro Max "
-item2.price = 1700
-item2.qty = 1
+item4.id = " 13 Pro Max "
+item4.price = 1700
+item4.qty = 1
 
 
 const addToShoppingCart = function(){
@@ -60,7 +60,27 @@ const addToShoppingCart = function(){
 addToShoppingCart()
        
 
+
+
+/* EXTRA 4
+ In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
+ Create a function called "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in it.
+*/
+
+const maxShoppingCart = function(){
+        
+        let mostExpensive = 0
+        for(i=0; i<shoppingCart.length; i++){
+                if(shoppingCart[i].price > mostExpensive)
+                
+                { mostExpensive = shoppingCart[i].price }
+        }
+               
+                return mostExpensive;
+        
 }
-    
+console.log(maxShoppingCart())
+
+
    
     

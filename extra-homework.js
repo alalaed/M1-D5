@@ -105,7 +105,18 @@ const addToShoppingCart = function(){
  Create a function called "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in it.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const maxShoppingCart = function(){
+        
+    let mostExpensive = 0
+    for(i=0; i<shoppingCart.length; i++){
+            if(shoppingCart[i].price > mostExpensive)
+            
+            { mostExpensive = shoppingCart[i].price }
+    }
+           
+            return mostExpensive;
+    
+}
 
 /* EXTRA 5
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
