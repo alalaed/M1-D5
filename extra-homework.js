@@ -140,7 +140,28 @@ console.log(latestShoppingCart())
  Write a function called "average" which receives an array and returns the average numerical value. The function automatically skips non-numeric entries in the array.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let median = [1,2,3,4,5,6,"butter","milk", 7,8, "apple", 9,10]
+
+
+const average = function(){
+
+        let array = []
+        for(i=0; i<median.length; i++){
+
+                if ( typeof median[i] === "number"){
+
+                array.push(median[i])
+        }
+                else {continue}
+        }
+        let result = 0
+        for(i=0; i<array.length; i++) {
+        result += array[i]}
+        let avg = result / array.length
+        console.log(avg)
+}
+
+average()
 
 /* EXTRA 8
  Write a function called "longest" to find the longest string from a given array of strings.
