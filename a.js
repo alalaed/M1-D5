@@ -1,5 +1,3 @@
-const cutString = function (str) {
-    return str.slice(1, str.length - 1); //.slice(1,-1) works as well
-  };
-
-  console.log(cutString("ali is tired"))
+let a = [1,2,3,4,5,6,7,8,9]
+    let n = a.length
+    console.log(n)

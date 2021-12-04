@@ -123,7 +123,11 @@ const maxShoppingCart = function(){
  Create a function called "latestShoppingCart" which receives the shoppingCart array and returns the last item.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const latestShoppingCart = function(){
+    let n = shoppingCart.length
+    return shoppingCart[n-1]
+}
+console.log(latestShoppingCart())
 
 /* EXTRA 6
  Create a function called "loopUntil" which receives an integer x between 0 and 9 as a parameter.

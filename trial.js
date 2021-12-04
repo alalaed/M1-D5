@@ -82,5 +82,19 @@ const maxShoppingCart = function(){
 console.log(maxShoppingCart())
 
 
+
+
+/* EXTRA 5
+ In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
+ Create a function called "latestShoppingCart" which receives the shoppingCart array and returns the last item.
+*/
+
+const latestShoppingCart = function(){
+        let n = shoppingCart.length
+        return shoppingCart[n-1]
+}
+console.log(latestShoppingCart())
+
+
    
     
