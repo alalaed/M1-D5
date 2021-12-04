@@ -4,8 +4,20 @@
  Write a function called "checkArray" which receives an array of random numbers (created with giveMeRandom) and prints, for each item, whether it's bigger than 5 or not.
  The function should return the sum of just the numbers bigger than 5.
 */
+const giveMeRandom = function(n){
+    let array = []
 
-/* WRITE YOUR ANSWER HERE */
+    for (i=0; i<=n; i++){
+
+        let x = Math.random()
+        let y = x*10
+        let z = Math.floor(y)
+        array.push(z)
+    }
+   return array 
+}
+console.log(giveMeRandom(6))
+
 
 /* EXTRA 2
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.

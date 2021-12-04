@@ -1,18 +1,22 @@
 
+let title = "this is a heading"
 
-const giveMeRandom = function(n){
-    for (i=0; i<=n; i++){
+n = (60 - title.length)/2
+console.log(n)
 
-        let array2 = []
-        let array = []
-        let x = Math.random()
-        let y = x*10
-        let z = Math.floor(y)
-        array2 = array + array.splice(1,0,z)
-        console.log(array2)
+
+const dashes = function(title){
+
+    let a = [ ]
+    let header = []
+    n = 5 
+    for (i = 0; i < n; i++){
+       
+         
+            a.splice(1,0,"-") 
         
     }
-    
+    console.log ( a + title + a )
     
 }
-giveMeRandom(6)
+dashes("this is a heading")

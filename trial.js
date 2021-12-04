@@ -1,21 +1,37 @@
-
-const dashes = function(title){
-
-        let a = [ ]
-      
-        n = 25
-        for (i = 0; i < n; i++){ 
-                a.splice(1,0,"-")  
+const giveMeRandom = function(n){
+        let array = []
+    
+        for (i=0; i<=n; i++){
+    
+            let x = Math.random()
+            let y = x*10
+            let z = Math.floor(y)
+            array.push(z)
         }
-        let header = a + title + a
-        let x = " "
-        for (i = 0; i < header.length; i++){ 
-            switch (header[i]){
-                case ",": break
-                default: x +=header[i]
-                //console.log(x)
-            }
-                
-    }console.log(x)
+        return array
+
 }
-    dashes("this is a heading")
+
+        console.log(giveMeRandom(6))
+
+        let sum = giveMeRandom(6)
+        let j = 0
+        for (i=0; i<sum.length; i++){
+                if(sum[i]>5){
+                     j+= sum[i]}   
+                   else
+                       continue    
+
+                        
+                }
+                console.log (j)  
+        
+
+       
+               
+               
+       
+
+    
+   
+    
