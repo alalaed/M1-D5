@@ -4,19 +4,41 @@
  Write a function called "checkArray" which receives an array of random numbers (created with giveMeRandom) and prints, for each item, whether it's bigger than 5 or not.
  The function should return the sum of just the numbers bigger than 5.
 */
+
+
+
+
 const giveMeRandom = function(n){
     let array = []
 
-    for (i=0; i<=n; i++){
+    for (i=0; i<n; i++){
 
         let x = Math.random()
         let y = x*10
         let z = Math.floor(y)
         array.push(z)
     }
-   return array 
+    return array
+
 }
-console.log(giveMeRandom(6))
+const checkArray = function(n){
+    
+
+    let sum = giveMeRandom(n)
+    console.log(sum)
+    let j = 0
+    for (i=0; i<sum.length; i++){
+            if(sum[i]>5){
+                 j+= sum[i]}   
+               else
+                   continue                       
+            }
+            console.log (j)  
+}
+
+   
+  checkArray(8)      
+           
 
 
 /* EXTRA 2

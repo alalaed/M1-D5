@@ -1,7 +1,11 @@
+
+
+
+
 const giveMeRandom = function(n){
         let array = []
     
-        for (i=0; i<=n; i++){
+        for (i=0; i<n; i++){
     
             let x = Math.random()
             let y = x*10
@@ -11,24 +15,23 @@ const giveMeRandom = function(n){
         return array
 
 }
+const checkArray = function(n){
+        
 
-        console.log(giveMeRandom(6))
-
-        let sum = giveMeRandom(6)
+        let sum = giveMeRandom(n)
+        console.log(sum)
         let j = 0
         for (i=0; i<sum.length; i++){
                 if(sum[i]>5){
                      j+= sum[i]}   
                    else
-                       continue    
-
-                        
+                       continue                       
                 }
                 console.log (j)  
-        
+}
 
        
-               
+      checkArray(8)      
                
        
 
