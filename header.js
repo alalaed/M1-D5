@@ -1,31 +1,23 @@
-
 const dashes = function(title){
 
     let a = [ ]
   
-    n = 5 
+    n = 25
     for (i = 0; i < n; i++){ 
             a.splice(1,0,"-")  
     }
-
-    //console.log ( a + title + a )
     let header = a + title + a
-    //console.log(header)
-    let final = header.toString()
-    /*let final = " "
-    for( i=0; i<header.length; i++){
-            final =+ header[i]*/
-            //console.log(final)
-    }
     let x = " "
-    for (i = 0; i < final.length; i++){ 
-        switch (final[i]){
+    for (i = 0; i < header.length; i++){ 
+        switch (header[i]){
             case ",": break
-            default: result +=final[i]
-            console.log(result)
+            default: x +=header[i]
+            //console.log(x)
         }
-
+            
+}console.log(x)
 }
 dashes("this is a heading")
+
 
 
