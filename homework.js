@@ -120,6 +120,7 @@ const upperFirst = function(s){
 
     let split = s.split(" ")
     for( i=0; i<split.length; i++ ){
+
         split[i]=split[i].charAt(0).toUpperCase( )+ split[i].slice(1)   
     }
     let capital=split.join(" ")
@@ -146,15 +147,23 @@ cutString("ali is Tired")
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
+
+
 const giveMeRandom = function(n){
+    let array = []
+
     for (i=0; i<=n; i++){
+
         let x = Math.random()
         let y = x*10
         let z = Math.floor(y)
-
-    console.log(z)
+        array.push(z)
     }
+   return array 
 }
+console.log(giveMeRandom(6))
+
+
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
 */

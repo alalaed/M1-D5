@@ -1,32 +1,34 @@
 
 
-for (i=0; i<10; i++){
-    let x = Math.random()
-    let y = x*10
-    let z = Math.floor(y)
 
-console.log(z)
-}
+let title = "this is a heading"
 
-const crazyDiff = function(n){
-    if ( n <19){
-        let x = (n-19)*-1
-    }else {
-        x = (n-19)*3
+n = (60 - title.length)/2
+//console.log(n)
+
+
+const dashes = function(title){
+
+    let a = [ ]
+  
+    n = 5 
+    for (i = 0; i < n; i++){
+       
+        
+            a.splice(1,0,"-") 
+        
     }
-    console.log(x)
-}
-
-crazyDiff (34)
-
-const giveMeRandom = function(n){
-    for (i=0; i<=n; i++){
-        let x = Math.random()
-        let y = x*10
-        let z = Math.floor(y)
-
-    console.log(z)
+    //console.log ( a + title + a )
+    let header = a + title + a
+    //console.log(header)
+    let final = header.toString()
+    /*let final = " "
+    for( i=0; i<header.length; i++){
+            final =+ header[i]*/
+            console.log(final)
     }
-}
+    
+//}
+dashes("this is a heading")
 
-giveMeRandom(20)
+
