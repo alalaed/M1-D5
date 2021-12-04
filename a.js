@@ -1,5 +1,5 @@
 
-let title = "this is a heading"
+/*let title = "this is a heading"
 
 n = (60 - title.length)/2
 console.log(n)
@@ -19,4 +19,17 @@ const dashes = function(title){
     console.log ( a + title + a )
     
 }
-dashes("this is a heading")
+dashes("this is a heading")*/
+
+
+
+
+let item1 = {
+    name: "Iphone",
+    id:" 13 ",
+    price: 1000,
+    qty: 1 ,
+}
+let g = [item1]
+console.log(item1)
+console.log(g[0].price)
