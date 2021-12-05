@@ -7,7 +7,6 @@ let title = ""
 
 
 const finalHeader = function(title){
-    
     let desiredCharacter = "-"
     let titleModified = "== " + title + " =="  
     let numberOfDashes = (lengthOfHeader - titleModified.length) / 2 // determines how many dashes should be inserted based on the length of the title
@@ -25,6 +24,3 @@ const finalHeader = function(title){
 }
 
 finalHeader("this is a title")
-
-
-

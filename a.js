@@ -1,16 +1,28 @@
-const average = function(){
+let title2 = ""
+
+let headerIndent = ""
+let lengthOfHeader = 50
+//let title = ""
+
+
+const finalHeader = function(title2){
+
+    let title ="== " + title2 + " =="
+    let desiredCharacter = "-"
+    let numberOfDashes = (lengthOfHeader - title.length) / 2
     
+    for (i = 0; i < numberOfDashes; i++){
 
-    let median = [1,2,3,4,5,6,"butter","milk", 7,8, "apple", 9,10]
+        headerIndent = headerIndent.concat(desiredCharacter)
+        
+        
+    }
 
-    let array = []
-    for(i=0; i<median.length; i++){
+    header = headerIndent +  title + headerIndent 
 
-            if(median[i]===Number){
-            array.push(meridian[i])
-            else continue
-    } 
-    console.log(array)
+    console.log(header)
+
 }
+ 
+finalHeader("this is a not heading")
 
-average()
