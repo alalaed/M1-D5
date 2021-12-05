@@ -167,7 +167,26 @@ average()
  Write a function called "longest" to find the longest string from a given array of strings.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let firstString = "this is the first string"
+let secondString = "this is the second string"
+let thirdString = "this is the third string "
+let finalString = "this is and will be the final string"
+let arrayOfStrings = [firstString,secondString,thirdString,finalString]
+
+const longest = function(){
+        let theLongestString = arrayOfStrings[0]
+        for ( i = 0; i< (arrayOfStrings.length); i++){
+                if((arrayOfStrings[i].length)>theLongestString.length){
+                        theLongestString = arrayOfStrings[i]              
+                } 
+                
+
+        }
+        return theLongestString 
+}
+
+console.log(longest(arrayOfStrings))
+
 
 /* EXTRA 9
  Write a function to create a very simple anti spam filter for your mailbox. The function takes a string emailContent, and returns a boolean.
