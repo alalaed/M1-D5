@@ -193,7 +193,16 @@ console.log(longest(arrayOfStrings))
  The function should return true if the emailContent string does not contain the words SPAM or SCAM.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let emailContent = " "
+const spamIdentifier = function(emailContent){
+        if (emailContent.includes ("spam") ||emailContent.includes ("scam")){
+                return false
+        }else return true
+
+}
+
+console.log(spamIdentifier(""))
+
 
 /* EXTRA 10
  Write a function that receives a date as a parameter and calculates the number of days passed since the given date.
